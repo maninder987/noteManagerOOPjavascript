@@ -12,7 +12,7 @@ Note manager using Object Oriented Javascript
 ```
 npm install -g live-server
 
-and then 
+// and then 
 
 live-server
 ```
