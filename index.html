@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .title {
+            display: block;
+            width: 100%;
+            border: none;
+            background: transparent;
+            padding: 2px;
+        }
+        
+        .content {
+            display: block;
+            width: 100%;
+            border: none;
+            background: transparent;
+        }
+        
+        .title:active,
+        .title:focus,
+        .content:active,
+        .content:focus {
+            border: solid 1px #777;
+            outline: none;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        
+        .badge {
+            font-size: 11px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="app">
+            <div class="row m-3">
+                <div class="col-md-3">
+                    <ul class="list-group">
+                        <li class="btn bnt-block btn-dark addNewNote"> Add Note +</li>
+                        <hr>
+                        <span id="noteListHtml"></span>
+                    </ul>
+                </div>
+                <div class="col-md-9 noteOutput">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <input type="hidden" class="inputNoteId">
+                            <input type="text" class="title" placeholder="Add title here...">
+                            <hr>
+                            <textarea name="content" id="content" class="content" cols="50" rows="10" placeholder="Note details..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
